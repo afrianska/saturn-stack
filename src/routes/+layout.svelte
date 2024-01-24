@@ -1,6 +1,13 @@
-<nav>
-	<a href="/">home</a>
-	<a href="/about">about</a>
-</nav>
+<script>
+  import "../app.css";
+</script>
 
-<slot/>
+<div class="container z-0">
+	<slot/>
+</div>
+
+<style lang="postcss">
+	.container {
+		@apply relative max-w-full h-screen bg-sky-100 flex items-center;
+	}
+</style>
